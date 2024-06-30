@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 public class Hooks {
     private static WebDriver driver;
 
-
     @Before
     public void setUp() {
         if (driver == null) {

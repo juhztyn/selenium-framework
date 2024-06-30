@@ -35,8 +35,8 @@ public class LoginSteps {
         loginPage.clickLogin();
     }
 
-    @Then("the user should be redirected to the homepage")
-    public void the_user_should_be_redirected_to_the_homepage() {
+    @Then("the user should be redirected to the home page")
+    public void the_user_should_be_redirected_to_the_page() {
         Assert.assertEquals(driver.getCurrentUrl(), HOME);
     }
 }
