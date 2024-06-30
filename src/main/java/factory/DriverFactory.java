@@ -10,6 +10,9 @@ import java.time.Duration;
 public class DriverFactory {
     private static WebDriver driver;
 
+    // Prevent instantiation
+    private DriverFactory() {}
+
     public static WebDriver getDriver() {
         if (driver == null) {
             ChromeOptions options = new ChromeOptions();
@@ -19,6 +22,7 @@ public class DriverFactory {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         }
+        System.out.println("Called getDriver()");
         return driver;
     }
 
