@@ -1,6 +1,7 @@
 package helper;
 
 public class CommonUtils {
+
     public static void pause() {
         try {
             Thread.sleep(2000);
@@ -8,4 +9,5 @@ public class CommonUtils {
             throw new RuntimeException(e);
         }
     }
+
 }

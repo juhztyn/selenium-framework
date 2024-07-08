@@ -2,15 +2,13 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.HomePage;
-import pages.LoginPage;
 
 import static cofig.UrlConstants.HOME;
 
 public class HomeSteps {
-    private BaseSteps baseSteps;
+    private final BaseSteps baseSteps;
     private final HomePage homePage;
 
     public HomeSteps() {
