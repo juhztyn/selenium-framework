@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,17 +12,17 @@ import static cofig.UrlConstants.HOME;
 import static cofig.UrlConstants.LOGIN;
 
 public class LoginSteps {
-    private final WebDriver driver;
+    private BaseSteps baseSteps;
     private final LoginPage loginPage;
 
     public LoginSteps() {
-        this.driver = Hooks.getDriver();
-        this.loginPage = new LoginPage(driver);
+        this.baseSteps = new BaseSteps();
+        this.loginPage = new LoginPage(baseSteps.getBaseDriver());
     }
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-        driver.get(LOGIN);
+        baseSteps.getBaseDriver().get(LOGIN);
     }
 
     @When("the user enters valid username {string} and password {string}")
@@ -30,13 +31,13 @@ public class LoginSteps {
         loginPage.enterPassword(password);
     }
 
-    @When("the user clicks the login button")
+    @And("the user clicks the login button")
     public void the_user_clicks_the_login_button() {
         loginPage.clickLogin();
     }
 
-    @Then("the user should be redirected to the home page")
+    @And("the user should be redirected to the home page")
     public void the_user_should_be_redirected_to_the_page() {
-        Assert.assertEquals(driver.getCurrentUrl(), HOME);
+        Assert.assertEquals(baseSteps.getBaseDriver().getCurrentUrl(), HOME);
     }
 }

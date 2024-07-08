@@ -5,21 +5,22 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.HomePage;
+import pages.LoginPage;
 
 import static cofig.UrlConstants.HOME;
 
 public class HomeSteps {
-    private final WebDriver driver;
+    private BaseSteps baseSteps;
     private final HomePage homePage;
 
     public HomeSteps() {
-        this.driver = Hooks.getDriver();
-        this.homePage = new HomePage(driver);
+        this.baseSteps = new BaseSteps();
+        this.homePage = new HomePage(baseSteps.getBaseDriver());
     }
 
     @Given("the user is on the home page")
     public void the_user_is_on_the_home_page() {
-        driver.get(HOME);
+        baseSteps.getBaseDriver().get(HOME);
     }
 
     @Then("the user can see the home page header")

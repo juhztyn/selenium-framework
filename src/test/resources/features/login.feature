@@ -4,7 +4,9 @@ Feature: Login Functionality
     Given the user is on the login page
     When the user enters valid username "<username>" and password "<password>"
     And the user clicks the login button
-    Then the user should be redirected to the home page
+    And the user should be redirected to the home page
+    And the user clicks on the hamburger button
+    Then the user should see the navbar show up
     Examples:
     | username      | password     |
     | standard_user | secret_sauce |

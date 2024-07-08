@@ -14,7 +14,7 @@ public class LoginPage extends BasePage {
     private final By passwordField = By.id("password");
     private final By loginButton = By.id("login-button");
 
-    // Common methods
+    // Methods
     public void enterUsername(String username) {
         driver.findElement(usernameField).sendKeys(username);
     }
