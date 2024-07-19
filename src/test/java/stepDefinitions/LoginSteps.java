@@ -1,10 +1,12 @@
 package stepDefinitions;
 
+import helper.CommonUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.LoginPage;
 
@@ -19,9 +21,30 @@ public class LoginSteps {
         this.loginPage = new LoginPage(baseSteps.getBaseDriver());
     }
 
-    // Common interaction steps
-    @When("the user enters valid username {string} and password {string}")
-    public void the_user_enters_valid_username_and_password(String username, String password) {
+    // Helper method to convert human-readable section names to element keys
+    private String convertLoginPageElementNameToElementKey(String elementName) {
+        return switch (elementName.toLowerCase()) {
+            case "login logo" -> "loginLogo";
+            case "accepted usernames section" -> "acceptedUsernamesHeader";
+            case "accepted passwords section" -> "acceptedPasswordsHeader";
+            case "username field" -> "usernameField";
+            case "password field" -> "passwordField";
+            case "login button" -> "loginButton";
+            case "login error" -> "loginError";
+            default -> throw new IllegalArgumentException("Unknown section name: " + elementName);
+        };
+    }
+
+    // Validation steps
+    @Then("the user should see the {string} on the login page")
+    public void the_user_should_see_the_on_the_login_page(String elementName) {
+        String elementKey = convertLoginPageElementNameToElementKey(elementName);
+        Assert.assertTrue(loginPage.isLoginPageElementDisplayed(elementKey));
+    }
+
+    // Interaction steps
+    @When("the user enters username {string} and password {string}")
+    public void the_user_enters_username_and_password(String username, String password) {
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
     }
