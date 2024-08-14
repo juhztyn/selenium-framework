@@ -29,6 +29,7 @@ public class DriverFactory {
         if (driver != null) {
             driver.quit();
             driver = null;
+            System.out.println("WebDriver has been quit and set to null.");
         }
     }
 }

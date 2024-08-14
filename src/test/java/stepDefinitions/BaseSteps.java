@@ -42,7 +42,11 @@ public class BaseSteps {
     public void the_user_is_on_the_page(String urlKey) {
         String expectedUrl = URLMap.get(urlKey);
 
+        // Navigate to the target page
         getBaseDriver().get(expectedUrl);
+
+        // Assert that we are on the correct page
+        Assert.assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
     }
 
     @And("the user clicks on the hamburger button")
