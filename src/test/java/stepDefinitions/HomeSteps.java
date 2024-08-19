@@ -4,25 +4,21 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import pages.HomePage;
+import pages.LoginPage;
 
 import static cofig.UrlConstants.HOME;
 
 public class HomeSteps {
-    private final BaseSteps baseSteps;
     private final HomePage homePage;
 
     public HomeSteps() {
-        this.baseSteps = new BaseSteps();
+        BaseSteps baseSteps = new BaseSteps();
         this.homePage = new HomePage(baseSteps.getBaseDriver());
     }
 
-    @Given("the user is on the home page")
-    public void the_user_is_on_the_home_page() {
-        baseSteps.getBaseDriver().get(HOME);
-    }
-
-    @Then("the user can see the home page header")
-    public void the_user_can_see_the_home_page_header() {
-        Assert.assertTrue(homePage.isHomeHeaderDisplayed());
+    // Validation steps
+    @Then("the user should see the {string} on the home page")
+    public void the_user_should_see_the_on_the_home_page(String elementName) {
+        Assert.assertTrue(homePage.isHomePageElementDisplayed(elementName), "Expected to see " + elementName + " on the home page, but it was not visible.");
     }
 }

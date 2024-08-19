@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class CommonUtils {
-    private static final int DEFAULT_TIMEOUT = 10;
+    private static final int DEFAULT_TIMEOUT = 5;
 
     // Private constructor to prevent instantiation
     private CommonUtils() {}
@@ -34,6 +34,20 @@ public class CommonUtils {
             throw new RuntimeException("Element not visible: " + locator, e);
         } catch (Exception e) {
             System.err.println("An unexpected error occurred while waiting for visibility of element: " + locator);
+            throw new RuntimeException("Unexpected error: " + locator, e);
+        }
+    }
+
+    // Function to explicit wait for element to be clickable
+    public static WebElement waitForElementToBeClickable(WebDriver driver, By locator) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT));
+            return wait.until(ExpectedConditions.elementToBeClickable(locator));
+        } catch (TimeoutException e) {
+            System.err.println("Element not clickable after " + DEFAULT_TIMEOUT + " seconds: " + locator);
+            throw new RuntimeException("Element not clickable: " + locator, e);
+        } catch (Exception e) {
+            System.err.println("An unexpected error occurred while waiting for element to be clickable: " + locator);
             throw new RuntimeException("Unexpected error: " + locator, e);
         }
     }
