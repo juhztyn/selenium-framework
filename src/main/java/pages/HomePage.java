@@ -1,6 +1,8 @@
 package pages;
 
 import helper.CommonUtils;
+import helper.LoggerUtil;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,8 @@ import java.util.Map;
 import static cofig.UrlConstants.HOME;
 
 public class HomePage extends BasePage {
+    private static final Logger logger = LoggerUtil.getLogger(HomePage.class);
+
     public HomePage(WebDriver driver) {
         super(driver);
         initLocators();
@@ -32,7 +36,7 @@ public class HomePage extends BasePage {
         try {
             return element.isDisplayed();
         } catch (Exception e) {
-            System.err.println("Failed to check visibility for element: " + elementName + " - " + e.getMessage());
+            logger.error("Failed to check visibility for element: {}", elementName, e);
             return false;
         }
     }
