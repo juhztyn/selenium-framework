@@ -4,11 +4,13 @@ import helper.CommonUtils;
 import helper.LoggerUtil;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 public class LoginPage extends BasePage {
     private static final Logger logger = LoggerUtil.getLogger(LoginPage.class);
@@ -30,7 +32,7 @@ public class LoginPage extends BasePage {
 
         // Form locators
         locators.put("username field", By.id("user-name"));
-        locators.put("password field", By.id("passwordd"));
+        locators.put("password field", By.id("password"));
         locators.put("login button", By.id("login-button"));
         locators.put("login error container", By.cssSelector("[class*='error-message-container']"));
         locators.put("login error", By.cssSelector("[data-test='error']"));
@@ -38,48 +40,80 @@ public class LoginPage extends BasePage {
 
         // Error messages
         locators.put("locked out error message", By.xpath("//h3[contains(text(), 'Sorry, this user has been locked out.')]"));
-
     }
 
     // Validation Methods
     public boolean isLoginPageElementDisplayed(String elementName) {
-        By locator = locators.get(elementName);
-        WebElement element = CommonUtils.waitForVisibility(driver, locator);
+        logger.info("Checking visibility of element '{}' on the Login page.", elementName);
+        WebElement element = CommonUtils.waitForVisibility(driver, locators.get(elementName), "Login");
+
         try {
-            return element.isDisplayed();
+            boolean isVisible = element.isDisplayed();
+            logger.info("Element '{}' is displayed on the Login page: {}", elementName, isVisible);
+            return isVisible;
+        } catch (NoSuchElementException e) {
+            logger.error("Element '{}' not found on the Login page.", elementName, e);
+            return false;
         } catch (Exception e) {
-            logger.error("Failed to check visibility for element: {}", elementName, e);
+            logger.error("Failed to check visibility for element '{}' on the Login page.", elementName, e);
             return false;
         }
     }
 
     // Interaction Methods
     public void enterUsername(String username) {
-        WebElement usernameField = CommonUtils.waitForElementToBeClickable(driver, locators.get("username field"));
+        logger.info("Attempting to enter username '{}' on Login page.", username);
+        WebElement usernameField = CommonUtils.waitForElementToBeClickable(driver, locators.get("username field"), "Login");
+
         try {
             usernameField.sendKeys(username);
+            logger.info("Successfully entered username '{}' on Login page.", username);
+        } catch (NoSuchElementException e) {
+            logger.error("Username field not found on Login page. Locator: {}", locators.get("username field"), e);
+            throw new RuntimeException("Username field not found on Login page", e);
+        } catch (ElementNotInteractableException e) {
+            logger.error("Username field not interactable on Login page. Locator: {}", locators.get("username field"), e);
+            throw new RuntimeException("Username field not interactable on Login page", e);
         } catch (Exception e) {
-            logger.error("Failed to send keys to the username field: {}", username, e);
+            logger.error("Failed to send keys to the username field on Login page. Username: {}, Locator: {}", username, locators.get("username field"), e);
             throw new RuntimeException("An error occurred while sending keys to the username field", e);
         }
     }
 
     public void enterPassword(String password) {
-        WebElement passwordField = CommonUtils.waitForElementToBeClickable(driver, locators.get("password field"));
+        logger.info("Attempting to enter password on the Login page.");
+        WebElement passwordField = CommonUtils.waitForElementToBeClickable(driver, locators.get("password field"), "Login");
+
         try {
             passwordField.sendKeys(password);
+            logger.info("Successfully entered password on the Login page.");
+        } catch (NoSuchElementException e) {
+            logger.error("Password field not found on the Login page. Locator: {}", locators.get("password field"), e);
+            throw new RuntimeException("Password field not found on the Login page", e);
+        } catch (ElementNotInteractableException e) {
+            logger.error("Password field not interactable on the Login page. Locator: {}", locators.get("password field"), e);
+            throw new RuntimeException("Password field not interactable on the Login page", e);
         } catch (Exception e) {
-            logger.error("Failed to send keys password the username field: {}", password, e);
+            logger.error("Failed to send keys to the password field on the Login page. Locator: {}", locators.get("password field"), e);
             throw new RuntimeException("An error occurred while sending keys to the password field", e);
         }
     }
 
     public void clickLogin() {
-        WebElement loginButton = CommonUtils.waitForElementToBeClickable(driver, locators.get("login button"));
+        WebElement loginButton = null;
         try {
+            logger.info("Attempting to click the login button on the Login page.");
+            loginButton = CommonUtils.waitForElementToBeClickable(driver, locators.get("login button"), "Login");
             loginButton.click();
+            logger.info("Successfully clicked the login button on the Login page.");
+        } catch (NoSuchElementException e) {
+            logger.error("Login button not found on the Login page. Locator: {}", locators.get("login button"), e);
+            throw new RuntimeException("Login button not found on the Login page", e);
+        } catch (ElementNotInteractableException e) {
+            logger.error("Login button not interactable on the Login page. Locator: {}", locators.get("login button"), e);
+            throw new RuntimeException("Login button not interactable on the Login page", e);
         } catch (Exception e) {
-            logger.error("Failed to click the login button", e);
+            logger.error("Failed to click the login button on the Login page. Locator: {}", locators.get("login button"), e);
             throw new RuntimeException("An error occurred while clicking the login button", e);
         }
     }

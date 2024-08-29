@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 import static cofig.UrlConstants.HOME;
 
@@ -31,12 +32,18 @@ public class HomePage extends BasePage {
 
     // Validation Methods
     public boolean isHomePageElementDisplayed(String elementName) {
-        By locator = locators.get(elementName);
-        WebElement element = CommonUtils.waitForVisibility(driver, locator);
+        logger.info("Checking visibility of element '{}' on the Home page.", elementName);
+        WebElement element = CommonUtils.waitForVisibility(driver, locators.get(elementName), "Home");
+
         try {
-            return element.isDisplayed();
+            boolean isVisible = element.isDisplayed();
+            logger.info("Element '{}' is displayed on the Home page: {}", elementName, isVisible);
+            return isVisible;
+        } catch (NoSuchElementException e) {
+            logger.error("Element '{}' not found on the Home page.", elementName, e);
+            return false;
         } catch (Exception e) {
-            logger.error("Failed to check visibility for element: {}", elementName, e);
+            logger.error("Failed to check visibility for element '{}' on the Home page.", elementName, e);
             return false;
         }
     }
