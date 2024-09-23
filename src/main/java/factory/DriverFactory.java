@@ -1,5 +1,6 @@
 package factory;
 
+import cofig.ConfigurationManager;
 import helper.LoggerUtil;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -8,28 +9,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
 public class DriverFactory {
     private static final Logger logger = LoggerUtil.getLogger(DriverFactory.class);
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private static final Properties properties;
-
-    // Load properties from configuration file
-    static {
-        properties = new Properties();
-        try {
-            FileInputStream configStream = new FileInputStream("src/main/resources/config.properties");
-            properties.load(configStream);
-            configStream.close();
-            logger.info("Configuration properties loaded successfully.");
-        } catch (IOException e) {
-            logger.error("Failed to load configuration properties at src/main/resources/config.properties", e);
-            throw new RuntimeException("Failed to load configuration properties.");
-        }
-    }
 
     // Prevent instantiation
     private DriverFactory() {}
@@ -37,7 +19,7 @@ public class DriverFactory {
     // Get driver based on config file properties
     public static WebDriver getDriver() {
         if (driver.get() == null) {
-            String browser = properties.getProperty("browser", "chrome").toLowerCase();
+            String browser = ConfigurationManager.getProperty("browser", "chrome").toLowerCase();
             logger.info("Starting WebDriver for browser: {}", browser);
 
             try {
