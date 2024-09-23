@@ -1,0 +1,369 @@
+2024-08-29 16:59:46.065 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-08-29 16:59:48.284 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-08-29 16:59:48.306 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-08-29 16:59:48.311 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-08-29 16:59:48.326 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-08-29 16:59:48.326 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-08-29 16:59:48.340 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-08-29 16:59:48.340 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-08-29 16:59:48.356 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-08-29 16:59:48.356 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-08-29 16:59:48.371 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-08-29 16:59:48.372 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-08-29 16:59:48.386 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-08-29 16:59:50.509 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-08-29 16:59:50.606 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-08-29 16:59:50.606 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-08-29 16:59:50.650 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-08-29 16:59:50.651 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-08-29 16:59:50.697 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-08-29 16:59:50.702 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-08-29 16:59:50.718 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-08-29 16:59:52.954 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-08-29 16:59:53.050 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-08-29 16:59:53.050 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-08-29 16:59:53.091 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-08-29 16:59:53.091 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-08-29 16:59:53.134 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-08-29 16:59:53.134 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-08-29 16:59:53.148 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-08-29 16:59:53.149 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-08-29 16:59:53.164 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-08-29 16:59:53.164 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-08-29 16:59:53.178 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-08-29 16:59:53.179 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-08-29 16:59:53.194 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-19 19:34:20.495 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-19 19:34:24.137 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-09-19 19:34:24.167 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-09-19 19:34:24.170 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-09-19 19:34:24.186 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-09-19 19:34:24.186 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-09-19 19:34:24.202 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-09-19 19:34:24.202 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-09-19 19:34:24.218 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-09-19 19:34:24.219 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-09-19 19:34:24.234 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-09-19 19:34:24.235 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-09-19 19:34:24.252 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-09-19 19:34:25.821 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-09-19 19:34:25.921 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-09-19 19:34:25.922 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-19 19:34:25.964 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-19 19:34:25.964 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-19 19:34:26.019 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-19 19:34:26.023 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-09-19 19:34:26.038 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-09-19 19:34:27.507 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-09-19 19:34:27.592 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-09-19 19:34:27.592 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-19 19:34:27.632 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-19 19:34:27.632 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-19 19:34:27.671 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-19 19:34:27.672 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-09-19 19:34:27.685 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-09-19 19:34:27.685 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-09-19 19:34:27.699 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-09-19 19:34:27.699 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-09-19 19:34:27.713 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-09-19 19:34:27.714 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-09-19 19:34:27.728 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-23 16:56:25.072 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-23 16:56:27.664 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-09-23 16:56:27.690 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-09-23 16:56:27.692 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-09-23 16:56:27.708 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-09-23 16:56:27.708 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-09-23 16:56:27.728 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-09-23 16:56:27.729 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-09-23 16:56:27.745 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-09-23 16:56:27.745 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-09-23 16:56:27.759 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-09-23 16:56:27.760 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-09-23 16:56:27.781 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-09-23 16:56:29.417 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-09-23 16:56:29.515 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-09-23 16:56:29.515 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 16:56:29.556 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 16:56:29.556 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 16:56:29.617 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 16:56:29.623 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-09-23 16:56:29.642 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-09-23 16:56:31.223 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-09-23 16:56:31.316 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-09-23 16:56:31.316 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 16:56:31.356 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 16:56:31.357 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 16:56:31.397 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 16:56:31.397 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-09-23 16:56:31.411 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-09-23 16:56:31.411 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-09-23 16:56:31.426 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-09-23 16:56:31.426 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-09-23 16:56:31.440 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-09-23 16:56:31.441 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-09-23 16:56:31.457 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-23 17:22:25.402 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-23 17:22:27.796 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-09-23 17:22:27.828 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-09-23 17:22:27.831 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-09-23 17:22:27.844 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-09-23 17:22:27.845 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-09-23 17:22:27.864 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-09-23 17:22:27.864 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-09-23 17:22:27.881 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-09-23 17:22:27.881 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-09-23 17:22:27.898 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-09-23 17:22:27.899 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-09-23 17:22:27.913 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-09-23 17:22:29.461 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-09-23 17:22:29.570 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-09-23 17:22:29.571 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 17:22:29.617 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 17:22:29.617 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 17:22:29.682 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 17:22:29.686 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-09-23 17:22:29.702 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-09-23 17:22:31.286 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-09-23 17:22:31.379 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-09-23 17:22:31.379 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 17:22:31.419 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 17:22:31.420 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 17:22:31.458 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 17:22:31.459 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-09-23 17:22:31.473 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-09-23 17:22:31.473 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-09-23 17:22:31.488 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-09-23 17:22:31.488 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-09-23 17:22:31.502 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-09-23 17:22:31.502 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-09-23 17:22:31.519 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-23 17:42:22.078 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-23 17:42:35.902 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-09-23 17:42:35.927 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-09-23 17:42:35.928 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-09-23 17:42:35.943 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-09-23 17:42:35.943 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-09-23 17:42:35.955 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-09-23 17:42:35.956 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-09-23 17:42:35.971 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-09-23 17:42:35.972 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-09-23 17:42:35.983 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-09-23 17:42:35.983 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-09-23 17:42:35.995 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-09-23 17:42:39.171 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-09-23 17:42:39.225 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-09-23 17:42:39.225 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 17:42:39.248 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 17:42:39.249 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 17:42:39.493 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 17:42:39.496 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-09-23 17:42:39.507 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-09-23 17:42:42.596 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-09-23 17:42:42.651 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-09-23 17:42:42.652 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 17:42:42.673 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 17:42:42.674 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 17:42:42.907 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 17:42:42.907 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-09-23 17:42:42.918 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-09-23 17:42:42.918 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-09-23 17:42:42.928 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-09-23 17:42:42.928 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-09-23 17:42:42.938 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-09-23 17:42:42.938 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-09-23 17:42:42.953 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-23 18:03:42.395 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-23 18:03:42.651 [main] INFO  factory.DriverFactory - Configuration properties loaded successfully.
+2024-09-23 18:03:42.651 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:03:44.470 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:03:44.494 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:03:44.972 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-09-23 18:03:45.002 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-09-23 18:03:45.005 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-09-23 18:03:45.021 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-09-23 18:03:45.021 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-09-23 18:03:45.037 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-09-23 18:03:45.038 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-09-23 18:03:45.053 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-09-23 18:03:45.054 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-09-23 18:03:45.071 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-09-23 18:03:45.072 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-09-23 18:03:45.088 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-09-23 18:03:45.181 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:03:45.189 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:03:46.073 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:03:46.452 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:03:46.741 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-09-23 18:03:46.847 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-09-23 18:03:46.847 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 18:03:46.888 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 18:03:46.888 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 18:03:46.952 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 18:03:46.959 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-09-23 18:03:46.976 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-09-23 18:03:47.070 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:03:47.073 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:03:47.946 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:03:48.323 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:03:48.581 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-09-23 18:03:48.666 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-09-23 18:03:48.666 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 18:03:48.705 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 18:03:48.705 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 18:03:48.745 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 18:03:48.745 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-09-23 18:03:48.758 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-09-23 18:03:48.759 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-09-23 18:03:48.773 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-09-23 18:03:48.774 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-09-23 18:03:48.789 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-09-23 18:03:48.789 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-09-23 18:03:48.805 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-23 18:03:48.900 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:27:44.950 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-23 18:27:45.196 [main] INFO  cofig.ConfigurationManager - Configuration properties loaded successfully.
+2024-09-23 18:27:45.196 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:27:45.204 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:27:45.210 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:27:45.211 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:27:45.215 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:27:45.216 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:28:14.158 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-23 18:28:14.413 [main] INFO  cofig.ConfigurationManager - Configuration properties loaded successfully.
+2024-09-23 18:28:14.413 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:28:14.413 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:28:15.895 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:28:15.918 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:28:15.920 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-09-23 18:28:16.296 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-09-23 18:28:16.325 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-09-23 18:28:16.328 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-09-23 18:28:16.343 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-09-23 18:28:16.343 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-09-23 18:28:16.359 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-09-23 18:28:16.360 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-09-23 18:28:16.374 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-09-23 18:28:16.374 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-09-23 18:28:16.391 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-09-23 18:28:16.391 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-09-23 18:28:16.408 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-09-23 18:28:16.408 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:28:16.501 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:28:16.501 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-09-23 18:28:16.508 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:28:16.508 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:28:17.366 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:28:17.746 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:28:17.746 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-09-23 18:28:18.003 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-09-23 18:28:18.111 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-09-23 18:28:18.111 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 18:28:18.153 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 18:28:18.154 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 18:28:18.212 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 18:28:18.216 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-09-23 18:28:18.232 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-09-23 18:28:18.233 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:28:18.332 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:28:18.332 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-09-23 18:28:18.336 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:28:18.336 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:28:19.208 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:28:19.585 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:28:19.586 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-09-23 18:28:19.837 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-09-23 18:28:19.941 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-09-23 18:28:19.941 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 18:28:19.980 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 18:28:19.980 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 18:28:20.020 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 18:28:20.021 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-09-23 18:28:20.034 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-09-23 18:28:20.035 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-09-23 18:28:20.049 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-09-23 18:28:20.050 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-09-23 18:28:20.066 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-09-23 18:28:20.067 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-09-23 18:28:20.083 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-23 18:28:20.083 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:28:20.178 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:28:20.179 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-09-23 18:30:49.404 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/justinharrison/Library/Caches/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml
+
+2024-09-23 18:30:49.653 [main] INFO  cofig.ConfigurationManager - Configuration properties loaded successfully.
+2024-09-23 18:30:49.654 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:30:49.654 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:30:51.140 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:30:51.162 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:30:51.163 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-09-23 18:30:51.494 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-09-23 18:30:51.528 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-09-23 18:30:51.530 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-09-23 18:30:51.547 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-09-23 18:30:51.548 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-09-23 18:30:51.565 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-09-23 18:30:51.566 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-09-23 18:30:51.581 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-09-23 18:30:51.581 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-09-23 18:30:51.601 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-09-23 18:30:51.602 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-09-23 18:30:51.616 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-09-23 18:30:51.617 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:30:51.718 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:30:51.718 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-09-23 18:30:51.725 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:30:51.725 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:30:52.590 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:30:52.971 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:30:52.973 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-09-23 18:30:53.238 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-09-23 18:30:53.351 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-09-23 18:30:53.351 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 18:30:53.392 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 18:30:53.393 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 18:30:53.454 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 18:30:53.459 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-09-23 18:30:53.477 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-09-23 18:30:53.477 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:30:53.568 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:30:53.568 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-09-23 18:30:53.572 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-09-23 18:30:53.573 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome
+2024-09-23 18:30:54.387 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully.
+2024-09-23 18:30:54.773 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-09-23 18:30:54.774 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-09-23 18:30:55.018 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-09-23 18:30:55.104 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-09-23 18:30:55.104 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-09-23 18:30:55.146 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-09-23 18:30:55.146 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-09-23 18:30:55.189 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-09-23 18:30:55.189 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-09-23 18:30:55.203 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-09-23 18:30:55.203 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-09-23 18:30:55.217 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-09-23 18:30:55.217 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-09-23 18:30:55.233 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-09-23 18:30:55.233 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-09-23 18:30:55.248 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-09-23 18:30:55.248 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-09-23 18:30:55.349 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-09-23 18:30:55.349 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
