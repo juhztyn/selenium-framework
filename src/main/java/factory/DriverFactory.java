@@ -1,5 +1,8 @@
 package factory;
 
+import cofig.UrlConstants;
+import helper.LoggerUtil;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,9 +15,9 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class DriverFactory {
-
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private static Properties properties;
+    private static final Logger logger = LoggerUtil.getLogger(DriverFactory.class);
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final Properties properties;
 
     // Load properties from configuration file
     static {
@@ -23,8 +26,9 @@ public class DriverFactory {
             FileInputStream configStream = new FileInputStream("src/main/resources/config.properties");
             properties.load(configStream);
             configStream.close();
+            logger.info("Configuration properties loaded successfully.");
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("Failed to load configuration properties at src/main/resources/config.properties", e);
             throw new RuntimeException("Failed to load configuration properties.");
         }
     }
@@ -32,24 +36,34 @@ public class DriverFactory {
     // Prevent instantiation
     private DriverFactory() {}
 
+    // Get driver based on config file properties
     public static WebDriver getDriver() {
         if (driver.get() == null) {
             String browser = properties.getProperty("browser", "chrome").toLowerCase();
+            logger.info("Starting WebDriver for browser: {}", browser);
 
-            switch (browser) {
-                case "firefox":
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    driver.set(new FirefoxDriver(firefoxOptions));
-                    break;
-                case "chrome":
-                default:
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.addArguments("--remote-allow-origins=*");
-                    driver.set(new ChromeDriver(chromeOptions));
-                    break;
+            try {
+                switch (browser) {
+                    case "firefox":
+                        FirefoxOptions firefoxOptions = new FirefoxOptions();
+                        driver.set(new FirefoxDriver(firefoxOptions));
+                        logger.info("Firefox WebDriver initialized successfully.");
+                        break;
+                    case "chrome":
+                    default:
+                        ChromeOptions chromeOptions = new ChromeOptions();
+                        chromeOptions.addArguments("--remote-allow-origins=*");
+                        driver.set(new ChromeDriver(chromeOptions));
+                        logger.info("Chrome WebDriver initialized successfully.");
+                        break;
+                }
+
+                driver.get().manage().window().maximize();
+                logger.info("Browser window maximized.");
+            } catch (Exception e) {
+                logger.error("Error while initializing WebDriver for browser: {}", browser, e);
+                throw new RuntimeException("Error while initializing WebDriver.", e);
             }
-
-            driver.get().manage().window().maximize();
         }
 
         return driver.get();
@@ -57,8 +71,14 @@ public class DriverFactory {
 
     public static void quitDriver() {
         if (driver.get() != null) {
-            driver.get().quit();
-            driver.remove();
+            try {
+                driver.get().quit();
+                logger.info("WebDriver quit successfully.");
+                driver.remove();
+            } catch (Exception e) {
+                logger.error("Error while quitting WebDriver.", e);
+                throw new RuntimeException("Error while quitting WebDriver.", e);
+            }
         }
     }
 }
