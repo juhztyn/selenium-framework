@@ -24,6 +24,7 @@ public class BaseSteps {
         return driver;
     }
 
+
     // Common validation steps
     @And("the user should be redirected to the {string} page")
     public void the_user_should_be_redirected_to_the_page(String urlKey) {
