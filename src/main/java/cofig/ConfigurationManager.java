@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigurationManager {
+
     private static final Properties properties;
     private static final Logger logger = LogManager.getLogger(ConfigurationManager.class);
 
@@ -27,6 +28,11 @@ public class ConfigurationManager {
 
     // Provide access to configuration properties
     public static String getProperty(String key, String defaultValue) {
+        // Check if the property was passed as a system property (e.g., via VM options)
+        String systemProperty = System.getProperty(key);
+        if (systemProperty != null) {
+            return systemProperty;
+        }
         return properties.getProperty(key, defaultValue);
     }
 }

@@ -20,21 +20,28 @@ public class DriverFactory {
     public static WebDriver getDriver() {
         if (driver.get() == null) {
             String browser = ConfigurationManager.getProperty("browser", "chrome").toLowerCase();
-            logger.info("Starting WebDriver for browser: {}", browser);
+            boolean headless = Boolean.parseBoolean(ConfigurationManager.getProperty("headless", "false"));
+            logger.info("Starting WebDriver for browser: {} in headless mode: {}", browser, headless);
 
             try {
                 switch (browser) {
                     case "firefox":
                         FirefoxOptions firefoxOptions = new FirefoxOptions();
+                        if (headless) {
+                            firefoxOptions.addArguments("--headless");
+                        }
                         driver.set(new FirefoxDriver(firefoxOptions));
-                        logger.info("Firefox WebDriver initialized successfully.");
+                        logger.info("Firefox WebDriver initialized successfully in headless mode: {}", headless);
                         break;
                     case "chrome":
                     default:
                         ChromeOptions chromeOptions = new ChromeOptions();
+                        if (headless) {
+                            chromeOptions.addArguments("--headless");
+                        }
                         chromeOptions.addArguments("--remote-allow-origins=*");
                         driver.set(new ChromeDriver(chromeOptions));
-                        logger.info("Chrome WebDriver initialized successfully.");
+                        logger.info("Chrome WebDriver initialized successfully in headless mode: {}", headless);
                         break;
                 }
 
