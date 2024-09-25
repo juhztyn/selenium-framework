@@ -1,17 +1,9 @@
 package stepDefinitions;
 
-import helper.CommonUtils;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.LoginPage;
-
-import static cofig.UrlConstants.HOME;
-import static cofig.UrlConstants.LOGIN;
 
 public class LoginSteps {
     private final LoginPage loginPage;
@@ -21,21 +13,19 @@ public class LoginSteps {
         this.loginPage = new LoginPage(baseSteps.getBaseDriver());
     }
 
-    // Validation steps
+    // --- Login Interaction Steps ---
+    // This step is used to log the user into the application (both successful and unsuccessful login attempts based on input credentials)
+    @When("the user logs in with username {string} and password {string}")
+    public void the_user_logs_in_with_username_and_password(String username, String password) {
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
+        loginPage.clickLogin();
+    }
+
+    // --- Login Validation Steps ---
+    // This step is used to validate an object is displayed on the page
     @Then("the user should see the {string} on the login page")
     public void the_user_should_see_the_on_the_login_page(String elementName) {
         Assert.assertTrue(loginPage.isLoginPageElementDisplayed(elementName), "Expected to see " + elementName + " on the login page, but it was not visible.");
-    }
-
-    // Interaction steps
-    @When("the user enters username {string} and password {string}")
-    public void the_user_enters_username_and_password(String username, String password) {
-        loginPage.enterUsername(username);
-        loginPage.enterPassword(password);
-    }
-
-    @And("the user clicks the login button")
-    public void the_user_clicks_the_login_button() {
-        loginPage.clickLogin();
     }
 }

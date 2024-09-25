@@ -1,8 +1,8 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.BasePage;
@@ -24,34 +24,33 @@ public class BaseSteps {
         return driver;
     }
 
-
-    // Common validation steps
-    @And("the user should be redirected to the {string} page")
-    public void the_user_should_be_redirected_to_the_page(String urlKey) {
+    // --- Common Navigation Steps ---
+    @Given("the user navigates to the {string} page")
+    public void the_user_navigates_to_the_page(String urlKey) {
         String expectedUrl = URLMap.get(urlKey);
+
+        getBaseDriver().get(expectedUrl);
 
         Assert.assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
     }
 
-    @Then("the user should see the navbar show up")
-    public void the_user_should_see_the_navbar_show_up() {
-        Assert.assertTrue(basePage.isHamburgerButtonDisplayed(), "Element is visible on the page");
+    // --- Common Interaction Steps ---
+    @When("the user clicks on the {string}")
+    public void the_user_clicks_on_the(String element) {
+        basePage.clickCommonElement(element);
     }
 
-    // Common interaction steps
-    @Given("the user is on the {string} page")
+
+    // --- Common Validation Steps ---
+    @Then("the user is on the {string} page")
     public void the_user_is_on_the_page(String urlKey) {
         String expectedUrl = URLMap.get(urlKey);
 
-        // Navigate to the target page
-        getBaseDriver().get(expectedUrl);
-
-        // Assert that we are on the correct page
         Assert.assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
     }
 
-    @And("the user clicks on the hamburger button")
-    public void the_user_clicks_on_the_hamburger_button() {
-        basePage.clickHamburgerIcon();
+    @Then("the user should see the {string}")
+    public void the_user_should_see_the(String elementName) {
+        Assert.assertTrue(basePage.isCommonElementDisplayed(elementName), "Expected to see " + elementName + ", but it was not visible.");
     }
 }

@@ -1,6 +1,5 @@
 package cofig;
 
-import helper.CommonUtils;
 import helper.LoggerUtil;
 import org.apache.logging.log4j.Logger;
 
