@@ -1,4 +1,4 @@
-@login
+@all @login
 Feature: Login Page
 
   Background:
@@ -9,6 +9,9 @@ Feature: Login Page
     Then the user should see the "login logo" on the login page
     And the user should see the "accepted usernames section" on the login page
     And the user should see the "accepted passwords section" on the login page
+
+  @ui-validation
+  Scenario: Form elements on the login page appear
     And the user should see the "username field" on the login page
     And the user should see the "password field" on the login page
     And the user should see the "login button" on the login page
@@ -26,3 +29,4 @@ Feature: Login Page
     And the user should see the "login error" on the login page
     And the user should see the "login error close button" on the login page
     And the user should see the "locked out error message" on the login page
+    And the user is on the "LOGIN" page

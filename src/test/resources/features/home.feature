@@ -1,4 +1,4 @@
-@home
+@all @home
 Feature: Home Page
 
   Background:
