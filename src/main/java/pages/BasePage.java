@@ -29,8 +29,24 @@ public class BasePage {
 
     // --- Initialize locators ---
     private void initLocators() {
-        // General locators
+        // Header locators
         locators.put("hamburger button", By.id("react-burger-menu-btn"));
+        locators.put("app logo", By.className("app_logo"));
+        locators.put("cart button", By.className("shopping_cart_link"));
+
+        // Navigation locators
+        locators.put("all items link", By.id("inventory_sidebar_link"));
+        locators.put("about link", By.id("about_sidebar_link"));
+        locators.put("logout link", By.id("logout_sidebar_link"));
+        locators.put("reset app state link", By.id("reset_sidebar_link"));
+
+        // Footer locators
+        locators.put("footer", By.className("footer"));
+        locators.put("social list", By.className("social"));
+        locators.put("twitter button", By.cssSelector("[data-test*='social-twitter']"));
+        locators.put("facebook button", By.cssSelector("[data-test*='social-facebook']"));
+        locators.put("linkedIn button", By.cssSelector("[data-test*='social-linkedin']"));
+        locators.put("footer info", By.className("footer_copy"));
     }
 
     // --- Common Interaction Methods ---

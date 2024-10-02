@@ -5,13 +5,13 @@ Feature: Login Page
     Given the user navigates to the "LOGIN" page
 
   @ui-validation
-  Scenario: General elements on the login page appear
+  Scenario: General elements appear on the login page
     Then the user should see the "login logo" on the login page
     And the user should see the "accepted usernames section" on the login page
     And the user should see the "accepted passwords section" on the login page
 
   @ui-validation
-  Scenario: Form elements on the login page appear
+  Scenario: Form elements appear on the login page
     And the user should see the "username field" on the login page
     And the user should see the "password field" on the login page
     And the user should see the "login button" on the login page

@@ -40,7 +40,6 @@ public class BaseSteps {
         basePage.clickCommonElement(element);
     }
 
-
     // --- Common Validation Steps ---
     @Then("the user is on the {string} page")
     public void the_user_is_on_the_page(String urlKey) {

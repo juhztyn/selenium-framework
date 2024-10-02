@@ -27,6 +27,9 @@ public class HomePage extends BasePage {
     private void initLocators() {
         // General locators
         locators.put("products header", By.xpath("//span[contains(text(),'Products')]"));
+        locators.put("inventory list", By.className("inventory_list"));
+        locators.put("product sort select", By.className("product_sort_container"));
+        locators.put("sort active option", By.className("active_option"));
     }
 
     // --- Validation Methods ---
