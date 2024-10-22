@@ -4,10 +4,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import pages.BasePage;
 
 import static cofig.UrlConstants.URLMap;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BaseSteps {
     private final WebDriver driver;
@@ -31,7 +32,7 @@ public class BaseSteps {
 
         getBaseDriver().get(expectedUrl);
 
-        Assert.assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
+        assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
     }
 
     // --- Common Interaction Steps ---
@@ -45,11 +46,11 @@ public class BaseSteps {
     public void the_user_is_on_the_page(String urlKey) {
         String expectedUrl = URLMap.get(urlKey);
 
-        Assert.assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
+        assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
     }
 
     @Then("the user should see the {string}")
     public void the_user_should_see_the(String elementName) {
-        Assert.assertTrue(basePage.isCommonElementDisplayed(elementName), "Expected to see " + elementName + ", but it was not visible.");
+        assertTrue(basePage.isCommonElementDisplayed(elementName), "Expected to see " + elementName + ", but it was not visible.");
     }
 }

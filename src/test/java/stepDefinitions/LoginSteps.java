@@ -2,8 +2,9 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 import pages.LoginPage;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginSteps {
     private final LoginPage loginPage;
@@ -26,6 +27,6 @@ public class LoginSteps {
     // This step is used to validate an object is displayed on the page
     @Then("the user should see the {string} on the login page")
     public void the_user_should_see_the_on_the_login_page(String elementName) {
-        Assert.assertTrue(loginPage.isLoginPageElementDisplayed(elementName), "Expected to see " + elementName + " on the login page, but it was not visible.");
+        assertTrue(loginPage.isLoginPageElementDisplayed(elementName), "Expected to see " + elementName + " on the login page, but it was not visible.");
     }
 }

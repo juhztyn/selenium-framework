@@ -1,6 +1,6 @@
 # BDD Selenium Cucumber Framework
 
-A Behavior-Driven Development (BDD) framework using Selenium, Cucumber, and TestNG for automating UI tests, following best practices like the Page Object Model (POM) and Singleton pattern for WebDriver management.
+A Behavior-Driven Development (BDD) framework using Selenium, Cucumber, and JUnit for automating UI tests, following best practices like the Page Object Model (POM) and Singleton pattern for WebDriver management.
 
 ## Description
 
