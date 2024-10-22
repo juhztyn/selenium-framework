@@ -1,6 +1,7 @@
 package cofig;
 
 import helper.LoggerUtil;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.FileInputStream;
@@ -9,29 +10,17 @@ import java.util.Map;
 import java.util.Properties;
 
 public class UrlConstants {
-    private static final Logger logger = LoggerUtil.getLogger(UrlConstants.class);
+    private static final Logger logger = LogManager.getLogger(UrlConstants.class);
 
-    // Load the base URL from the config file
-    private static String getBaseUrl() {
-        Properties properties = new Properties();
-        try {
-            FileInputStream configStream = new FileInputStream("src/main/resources/config.properties");
-            properties.load(configStream);
-            configStream.close();
-        } catch (IOException e) {
-            logger.error("Failed to load base URL from config file at src/main/resources/config.properties", e);
-            throw new RuntimeException("Failed to load base URL from config file.");
-        }
-        return properties.getProperty("base.url");
-    }
+    // Retrieve the base URL dynamically based on the environment
+    private static final String BASE_URL = ConfigurationManager.getEnvironmentProperty("base.url");
 
-    // Constants
-    private static final String PREFIX = getBaseUrl();
-    public static final String LOGIN = PREFIX;
-    public static final String HOME = PREFIX + "inventory.html";
+    // Constants using the base URL
+    public static final String LOGIN = BASE_URL;
+    public static final String HOME = BASE_URL + "inventory.html";
 
     // Map of URLs to their corresponding strings
-    public static final Map<String, String> URLMap = Map.of(
+    public static final Map<String, String> URL_MAP = Map.of(
             "LOGIN", LOGIN,
             "HOME", HOME
     );

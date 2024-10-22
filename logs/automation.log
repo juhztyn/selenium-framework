@@ -1751,3 +1751,247 @@
 2024-10-21 15:02:03.120 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
 2024-10-21 15:02:03.208 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
 2024-10-21 15:02:03.209 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:11:26.749 [main] INFO  cofig.ConfigurationManager - Configuration properties loaded successfully.
+2024-10-22 11:11:26.751 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:11:26.752 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:11:28.914 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:11:28.937 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:11:28.939 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:11:28.946 [main] INFO  cofig.ConfigurationManager - Returning environment-specific property: 'https://www.saucedemo.com/' for key 'base.url' and environment 'local'.
+2024-10-22 11:11:29.462 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-10-22 11:11:29.596 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-10-22 11:11:29.596 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:11:29.635 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:11:29.635 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:11:29.700 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:11:29.706 [main] INFO  pages.BasePage - Checking visibility of common element 'hamburger button'.
+2024-10-22 11:11:29.724 [main] INFO  pages.BasePage - Common element 'hamburger button' is displayed: true
+2024-10-22 11:11:29.725 [main] INFO  pages.BasePage - Checking visibility of common element 'app logo'.
+2024-10-22 11:11:29.739 [main] INFO  pages.BasePage - Common element 'app logo' is displayed: true
+2024-10-22 11:11:29.740 [main] INFO  pages.BasePage - Checking visibility of common element 'cart button'.
+2024-10-22 11:11:29.755 [main] INFO  pages.BasePage - Common element 'cart button' is displayed: true
+2024-10-22 11:11:29.756 [main] INFO  pages.BasePage - Checking visibility of common element 'footer'.
+2024-10-22 11:11:29.770 [main] INFO  pages.BasePage - Common element 'footer' is displayed: true
+2024-10-22 11:11:29.770 [main] INFO  pages.BasePage - Checking visibility of common element 'social list'.
+2024-10-22 11:11:29.784 [main] INFO  pages.BasePage - Common element 'social list' is displayed: true
+2024-10-22 11:11:29.784 [main] INFO  pages.BasePage - Checking visibility of common element 'twitter button'.
+2024-10-22 11:11:29.797 [main] INFO  pages.BasePage - Common element 'twitter button' is displayed: true
+2024-10-22 11:11:29.798 [main] INFO  pages.BasePage - Checking visibility of common element 'facebook button'.
+2024-10-22 11:11:29.812 [main] INFO  pages.BasePage - Common element 'facebook button' is displayed: true
+2024-10-22 11:11:29.812 [main] INFO  pages.BasePage - Checking visibility of common element 'linkedIn button'.
+2024-10-22 11:11:29.825 [main] INFO  pages.BasePage - Common element 'linkedIn button' is displayed: true
+2024-10-22 11:11:29.825 [main] INFO  pages.BasePage - Checking visibility of common element 'footer info'.
+2024-10-22 11:11:29.838 [main] INFO  pages.BasePage - Common element 'footer info' is displayed: true
+2024-10-22 11:11:29.839 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:11:29.935 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:11:29.935 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:11:29.940 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:11:29.940 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:11:30.540 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:11:30.569 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:11:30.574 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:11:30.820 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-10-22 11:11:30.918 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-10-22 11:11:30.918 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:11:30.956 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:11:30.956 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:11:31.002 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:11:31.006 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-10-22 11:11:31.029 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-10-22 11:11:31.029 [main] INFO  pages.HomePage - Checking visibility of element 'inventory list' on the Home page.
+2024-10-22 11:11:31.043 [main] INFO  pages.HomePage - Element 'inventory list' is displayed on the Home page: true
+2024-10-22 11:11:31.044 [main] INFO  pages.HomePage - Checking visibility of element 'product sort select' on the Home page.
+2024-10-22 11:11:31.058 [main] INFO  pages.HomePage - Element 'product sort select' is displayed on the Home page: true
+2024-10-22 11:11:31.059 [main] INFO  pages.HomePage - Checking visibility of element 'sort active option' on the Home page.
+2024-10-22 11:11:31.078 [main] INFO  pages.HomePage - Element 'sort active option' is displayed on the Home page: true
+2024-10-22 11:11:31.079 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:11:31.171 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:11:31.172 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:11:31.177 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:11:31.177 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:11:31.801 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:11:31.825 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:11:31.829 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:11:32.072 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-10-22 11:11:32.088 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-10-22 11:11:32.092 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-10-22 11:11:32.105 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-10-22 11:11:32.108 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-10-22 11:11:32.122 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-10-22 11:11:32.122 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:11:32.210 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:11:32.210 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:11:32.214 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:11:32.214 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:11:32.833 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:11:32.856 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:11:32.857 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:11:33.099 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-10-22 11:11:33.115 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-10-22 11:11:33.116 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-10-22 11:11:33.128 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-10-22 11:11:33.130 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-10-22 11:11:33.142 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-10-22 11:11:33.142 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:11:33.229 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:11:33.229 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:11:33.232 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:11:33.232 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:11:33.860 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:11:33.888 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:11:33.890 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:11:34.127 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-10-22 11:11:34.223 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-10-22 11:11:34.223 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:11:34.261 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:11:34.261 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:11:34.312 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:11:34.317 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-10-22 11:11:34.331 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-10-22 11:11:34.332 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:11:34.423 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:11:34.423 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:11:34.426 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:11:34.426 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:11:35.044 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:11:35.085 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:11:35.087 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:11:35.324 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-10-22 11:11:35.420 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-10-22 11:11:35.420 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:11:35.457 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:11:35.458 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:11:35.498 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:11:35.499 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-10-22 11:11:35.511 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-10-22 11:11:35.511 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-10-22 11:11:35.525 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-10-22 11:11:35.525 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-10-22 11:11:35.543 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-10-22 11:11:35.543 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-10-22 11:11:35.559 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-10-22 11:11:35.563 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:11:35.655 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:11:35.655 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:11:58.542 [main] INFO  cofig.ConfigurationManager - Configuration properties loaded successfully.
+2024-10-22 11:11:58.544 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:11:58.545 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:11:59.426 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:11:59.445 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:11:59.446 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:11:59.454 [main] INFO  cofig.ConfigurationManager - Returning environment-specific property: 'https://www.saucedemo.com/' for key 'base.url' and environment 'staging'.
+2024-10-22 11:11:59.707 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-10-22 11:11:59.817 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-10-22 11:11:59.817 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:11:59.857 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:11:59.857 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:11:59.904 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:11:59.909 [main] INFO  pages.BasePage - Checking visibility of common element 'hamburger button'.
+2024-10-22 11:11:59.928 [main] INFO  pages.BasePage - Common element 'hamburger button' is displayed: true
+2024-10-22 11:11:59.930 [main] INFO  pages.BasePage - Checking visibility of common element 'app logo'.
+2024-10-22 11:11:59.945 [main] INFO  pages.BasePage - Common element 'app logo' is displayed: true
+2024-10-22 11:11:59.946 [main] INFO  pages.BasePage - Checking visibility of common element 'cart button'.
+2024-10-22 11:11:59.964 [main] INFO  pages.BasePage - Common element 'cart button' is displayed: true
+2024-10-22 11:11:59.964 [main] INFO  pages.BasePage - Checking visibility of common element 'footer'.
+2024-10-22 11:11:59.980 [main] INFO  pages.BasePage - Common element 'footer' is displayed: true
+2024-10-22 11:11:59.981 [main] INFO  pages.BasePage - Checking visibility of common element 'social list'.
+2024-10-22 11:11:59.995 [main] INFO  pages.BasePage - Common element 'social list' is displayed: true
+2024-10-22 11:11:59.996 [main] INFO  pages.BasePage - Checking visibility of common element 'twitter button'.
+2024-10-22 11:12:00.011 [main] INFO  pages.BasePage - Common element 'twitter button' is displayed: true
+2024-10-22 11:12:00.011 [main] INFO  pages.BasePage - Checking visibility of common element 'facebook button'.
+2024-10-22 11:12:00.026 [main] INFO  pages.BasePage - Common element 'facebook button' is displayed: true
+2024-10-22 11:12:00.026 [main] INFO  pages.BasePage - Checking visibility of common element 'linkedIn button'.
+2024-10-22 11:12:00.041 [main] INFO  pages.BasePage - Common element 'linkedIn button' is displayed: true
+2024-10-22 11:12:00.041 [main] INFO  pages.BasePage - Checking visibility of common element 'footer info'.
+2024-10-22 11:12:00.056 [main] INFO  pages.BasePage - Common element 'footer info' is displayed: true
+2024-10-22 11:12:00.056 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:12:00.155 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:12:00.155 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:12:00.160 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:12:00.160 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:12:00.785 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:12:00.808 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:12:00.811 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:12:01.068 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-10-22 11:12:01.171 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-10-22 11:12:01.171 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:12:01.208 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:12:01.208 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:12:01.255 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:12:01.260 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-10-22 11:12:01.280 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-10-22 11:12:01.281 [main] INFO  pages.HomePage - Checking visibility of element 'inventory list' on the Home page.
+2024-10-22 11:12:01.295 [main] INFO  pages.HomePage - Element 'inventory list' is displayed on the Home page: true
+2024-10-22 11:12:01.296 [main] INFO  pages.HomePage - Checking visibility of element 'product sort select' on the Home page.
+2024-10-22 11:12:01.311 [main] INFO  pages.HomePage - Element 'product sort select' is displayed on the Home page: true
+2024-10-22 11:12:01.312 [main] INFO  pages.HomePage - Checking visibility of element 'sort active option' on the Home page.
+2024-10-22 11:12:01.331 [main] INFO  pages.HomePage - Element 'sort active option' is displayed on the Home page: true
+2024-10-22 11:12:01.331 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:12:01.426 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:12:01.426 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:12:01.433 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:12:01.433 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:12:02.056 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:12:02.078 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:12:02.079 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:12:02.347 [main] INFO  pages.LoginPage - Checking visibility of element 'login logo' on the Login page.
+2024-10-22 11:12:02.366 [main] INFO  pages.LoginPage - Element 'login logo' is displayed on the Login page: true
+2024-10-22 11:12:02.369 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted usernames section' on the Login page.
+2024-10-22 11:12:02.381 [main] INFO  pages.LoginPage - Element 'accepted usernames section' is displayed on the Login page: true
+2024-10-22 11:12:02.382 [main] INFO  pages.LoginPage - Checking visibility of element 'accepted passwords section' on the Login page.
+2024-10-22 11:12:02.397 [main] INFO  pages.LoginPage - Element 'accepted passwords section' is displayed on the Login page: true
+2024-10-22 11:12:02.397 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:12:02.484 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:12:02.484 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:12:02.488 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:12:02.488 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:12:03.110 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:12:03.136 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:12:03.140 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:12:03.372 [main] INFO  pages.LoginPage - Checking visibility of element 'username field' on the Login page.
+2024-10-22 11:12:03.389 [main] INFO  pages.LoginPage - Element 'username field' is displayed on the Login page: true
+2024-10-22 11:12:03.389 [main] INFO  pages.LoginPage - Checking visibility of element 'password field' on the Login page.
+2024-10-22 11:12:03.401 [main] INFO  pages.LoginPage - Element 'password field' is displayed on the Login page: true
+2024-10-22 11:12:03.401 [main] INFO  pages.LoginPage - Checking visibility of element 'login button' on the Login page.
+2024-10-22 11:12:03.414 [main] INFO  pages.LoginPage - Element 'login button' is displayed on the Login page: true
+2024-10-22 11:12:03.414 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:12:03.505 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:12:03.505 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:12:03.508 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:12:03.508 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:12:04.123 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:12:04.145 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:12:04.148 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:12:04.383 [main] INFO  pages.LoginPage - Attempting to enter username 'standard_user' on Login page.
+2024-10-22 11:12:04.480 [main] INFO  pages.LoginPage - Successfully entered username 'standard_user' on Login page.
+2024-10-22 11:12:04.480 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:12:04.517 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:12:04.517 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:12:04.577 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:12:04.581 [main] INFO  pages.HomePage - Checking visibility of element 'products header' on the Home page.
+2024-10-22 11:12:04.598 [main] INFO  pages.HomePage - Element 'products header' is displayed on the Home page: true
+2024-10-22 11:12:04.599 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:12:04.690 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:12:04.690 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.
+2024-10-22 11:12:04.693 [main] INFO  stepDefinitions.Hooks - Scenario is starting...
+2024-10-22 11:12:04.693 [main] INFO  factory.DriverFactory - Starting WebDriver for browser: chrome in headless mode: true
+2024-10-22 11:12:05.320 [main] INFO  factory.DriverFactory - Chrome WebDriver initialized successfully in headless mode: true
+2024-10-22 11:12:05.346 [main] INFO  factory.DriverFactory - Browser window maximized.
+2024-10-22 11:12:05.348 [main] INFO  stepDefinitions.Hooks - WebDriver initialized for scenario scope.
+2024-10-22 11:12:05.581 [main] INFO  pages.LoginPage - Attempting to enter username 'locked_out_user' on Login page.
+2024-10-22 11:12:05.679 [main] INFO  pages.LoginPage - Successfully entered username 'locked_out_user' on Login page.
+2024-10-22 11:12:05.679 [main] INFO  pages.LoginPage - Attempting to enter password on the Login page.
+2024-10-22 11:12:05.717 [main] INFO  pages.LoginPage - Successfully entered password on the Login page.
+2024-10-22 11:12:05.717 [main] INFO  pages.LoginPage - Attempting to click the login button on the Login page.
+2024-10-22 11:12:05.755 [main] INFO  pages.LoginPage - Successfully clicked the login button on the Login page.
+2024-10-22 11:12:05.756 [main] INFO  pages.LoginPage - Checking visibility of element 'login error container' on the Login page.
+2024-10-22 11:12:05.768 [main] INFO  pages.LoginPage - Element 'login error container' is displayed on the Login page: true
+2024-10-22 11:12:05.769 [main] INFO  pages.LoginPage - Checking visibility of element 'login error' on the Login page.
+2024-10-22 11:12:05.782 [main] INFO  pages.LoginPage - Element 'login error' is displayed on the Login page: true
+2024-10-22 11:12:05.782 [main] INFO  pages.LoginPage - Checking visibility of element 'login error close button' on the Login page.
+2024-10-22 11:12:05.799 [main] INFO  pages.LoginPage - Element 'login error close button' is displayed on the Login page: true
+2024-10-22 11:12:05.799 [main] INFO  pages.LoginPage - Checking visibility of element 'locked out error message' on the Login page.
+2024-10-22 11:12:05.814 [main] INFO  pages.LoginPage - Element 'locked out error message' is displayed on the Login page: true
+2024-10-22 11:12:05.819 [main] INFO  stepDefinitions.Hooks - Scenario is ending...
+2024-10-22 11:12:05.913 [main] INFO  factory.DriverFactory - WebDriver quit successfully.
+2024-10-22 11:12:05.913 [main] INFO  stepDefinitions.Hooks - WebDriver quit for scenario scope and set to null.

@@ -6,7 +6,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
-import static cofig.UrlConstants.URLMap;
+import static cofig.UrlConstants.URL_MAP;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -28,7 +28,7 @@ public class BaseSteps {
     // --- Common Navigation Steps ---
     @Given("the user navigates to the {string} page")
     public void the_user_navigates_to_the_page(String urlKey) {
-        String expectedUrl = URLMap.get(urlKey);
+        String expectedUrl = URL_MAP.get(urlKey);
 
         getBaseDriver().get(expectedUrl);
 
@@ -44,7 +44,7 @@ public class BaseSteps {
     // --- Common Validation Steps ---
     @Then("the user is on the {string} page")
     public void the_user_is_on_the_page(String urlKey) {
-        String expectedUrl = URLMap.get(urlKey);
+        String expectedUrl = URL_MAP.get(urlKey);
 
         assertEquals(getBaseDriver().getCurrentUrl(), expectedUrl);
     }
