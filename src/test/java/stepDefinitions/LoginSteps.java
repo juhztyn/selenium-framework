@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import cofig.ConfigurationManager;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.LoginPage;
@@ -15,6 +16,18 @@ public class LoginSteps {
     }
 
     // --- Login Interaction Steps ---
+    // Log in with different user types using the ConfigurationManager methods
+    @When("the user logs in as a {string} user")
+    public void the_user_logs_in_as_a(String userType) {
+        // Retrieve username and password based on the user type and environment
+        String username = ConfigurationManager.getUsername(userType);
+        String password = ConfigurationManager.getPassword(userType);
+
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
+        loginPage.clickLogin();
+    }
+
     // This step is used to log the user into the application (both successful and unsuccessful login attempts based on input credentials)
     @When("the user logs in with username {string} and password {string}")
     public void the_user_logs_in_with_username_and_password(String username, String password) {

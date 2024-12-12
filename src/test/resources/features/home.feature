@@ -3,7 +3,7 @@ Feature: Home Page
 
   Background:
     Given the user navigates to the "LOGIN" page
-    And the user logs in with username "standard_user" and password "secret_sauce"
+    When the user logs in as a "standard" user
     And the user is on the "HOME" page
 
   @ui-validation
